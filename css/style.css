@@ -183,6 +183,7 @@ input {
 .button_up {
     width: 0.6rem;
     height: 0.6rem;
+    margin-bottom: 0.2rem;
 }
 .button_down {
     width: 0.6rem;
