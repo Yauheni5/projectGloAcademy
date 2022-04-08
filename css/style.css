@@ -144,6 +144,51 @@ input {
     height: 6rem;
     border-radius:50%;
 }
+
+.aside_trailers {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.aside_caption {
+    font-size: 2rem;
+    width:10.7rem;
+    height: 2.3rem;
+    margin-right: 15.6rem;
+}
+
+.sort_by {
+    font-size: 1.4rem;
+    color:rgba(255, 255, 255, 0.4);
+    width: 4.6rem;
+    height: 1.6rem;
+    margin-right: 1.5rem;
+}
+
+.sort_day {
+    font-size: 1.4rem;
+    width: 3.8rem;
+    height: 1.6rem;
+    margin-right: 0.4rem;
+}
+
+.button_for_sort {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.button_up {
+    width: 0.6rem;
+    height: 0.6rem;
+}
+.button_down {
+    width: 0.6rem;
+    height: 0.6rem;
+}
+
 /*сетка*/
 @media (max-width: 108em) {
     html{
