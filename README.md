@@ -1,2 +1,2 @@
-for View [Yauheni5/projectGlo](url) 
+for View [https://yauheni5.github.io/projectGloAcademy/](url) 
 ```
