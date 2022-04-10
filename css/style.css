@@ -156,6 +156,7 @@ input {
     display: flex;
     align-items: center;
     flex-direction: row;
+    margin-bottom: 2.6rem;
 }
 
 .aside_caption {
@@ -184,7 +185,6 @@ input {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
 }
 
 .button_up {
@@ -195,6 +195,96 @@ input {
 .button_down {
     width: 0.6rem;
     height: 0.6rem;
+}
+
+.aside_trailers_video {
+    position: relative;
+    width: 37.1rem;
+    height: 22.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: url('../img/asideBar.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 1.9rem 0 1.9rem 1.9rem;
+    margin-right: 5.9rem;
+    margin-bottom: 3rem;
+}
+
+.aside_genres {
+    width: 42rem;
+    height: 30.1rem;
+    padding: 2.5rem 9.8rem 4rem 2.4rem;
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.genres_button_text{
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 112%;
+}
+
+.all_button_action_genre, .all_active_favorite_genres_button{
+    display: flex;
+    flex-wrap:wrap;
+}
+
+
+.button_action_genre, .active_favorite_genres_button{
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 117%;
+    padding: 0.5rem 1rem 0.6rem 1rem;
+    margin-right: 3rem;
+    margin-top: 2rem;
+    border-radius: 3rem;
+}
+.add_favorite_genres{
+    display: flex;
+    text-align: center;
+}
+
+.favorite_genres_button {
+    margin-top: 6rem;
+}
+
+.favorite_genres_button_add{
+    width: 1.8rem;
+    height: 1.8rem;
+    background: #2B2A2F;
+    border-radius:50%;
+    margin-right: 1rem;
+}
+
+.favorite_genres_button_add img{
+    width: 0.8rem;
+    height: 1.6rem;
+    margin: auto 0;
+}
+.active_favorite_genres_text {
+    font-size: 1.4rem;
+    line-height: 117%;
+}
+.active_favorite_genres_button {
+    background: #2B2A2F;
+}
+
+.genre_Action{
+background:#8066f6;
+}
+.genre_Western{
+background:#E1784F;
+}
+.genre_Adventures{
+background:#8066f6;
+}
+.genre_Drama{
+background:#E1784F;
+}
+.genre_Comedy{
+background:#63CFE1;
 }
 
 .main-dislpay-trailer {
@@ -293,7 +383,7 @@ input {
     margin-left: 0.4rem;
 }
 
-.trending {
+.trending, .popular{
     display: flex;
     justify-content: space-between;
     padding-right: 1.6rem;
@@ -312,7 +402,7 @@ input {
     border-radius: 1.6rem;
 }
 
-.tranding_footer {
+.tranding_footer, .popular_footer {
     position: relative;
     width: 100%;
     display: flex;
@@ -321,6 +411,11 @@ input {
     padding: 1.8rem 1rem 1.8rem 6.4rem;
     border-radius: 1.6rem;
     background: rgba(255, 255, 255, 0.1);
+}
+
+.popular_footer {
+    background: rgba(255, 255, 255, 0.3);
+    padding: .8rem 1.9rem 0.8rem 6.4rem;
 }
 
 .trending_header {
@@ -350,13 +445,21 @@ input {
     left:2rem;
     font-size: 1.4rem;
     line-height: 114%;
+    background:rgba(255, 255, 255, 0.3);
+    border-radius:1.6rem;
+    padding: 0.4rem 1.3rem;
 }
 
 .small {
     width: 5rem;
     height: 5rem;
     left:7%;
+}
 
+.small-plus {
+    width: 3rem;
+    height: 3rem;
+    left:10%;
 }
 
 .button-play-wrap.small .button-play{
@@ -367,6 +470,55 @@ input {
     border-bottom: 1rem solid transparent;
     border-radius:0.2rem;
 }
+
+.button-play-wrap.small-plus .button-play{
+    width: 0;
+    height: 0;
+    border-top: 0.5rem solid transparent;
+    border-left: 1rem solid #FFFFFF;
+    border-bottom: 0.5rem solid transparent;
+    border-radius:0.2rem;
+}
+
+.popular_item {
+    display: flex;
+    align-items:flex-end;
+    width: 30%;
+    height: 19.2rem;
+    background:url(../img/netflix.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 1.6rem;
+}
+
+.popular_header {
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 120%;
+}
+
+.popular_date {
+    font-weight: 700;
+    font-size: 0.8rem;
+    line-height: 113%;
+
+}
+
+.popular_rating {
+    display: flex;
+    align-items: center;
+}
+
+.popular_rating span {
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 120%;
+    margin-left: 0.4rem;
+}
+
+
+
 
 /*сетка*/
 @media (max-width: 108em) {
